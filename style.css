@@ -124,7 +124,159 @@ nav ul li {
 .hambar:nth-child(3){
     bottom: 18px;
 }
+/* Hero */
+#hero{
+    display: grid;
+    grid-template-rows:60vh ;
+    grid-template-columns:1fr 2fr ;
+    grid-template-areas:
+    "hero-text  hero-img";
+    gap: 10px;
+}
+.hero-text{
+    grid-area: hero-text;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    pad: 1.5rem;
+    background-color: #cbe6ea;
+}
+.hero-text h1{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+.underline{
+    position: relative;
+}
+.underline::after{
+    position: absolute;
+    content: '';
+    width: 30%;
+    transform: translateX(80px);
+    height: 2px;
+    background-color: gray;
+    left: 0;
+    bottom: -20px;
+}
+.hero-text p{
+    font-size: 1.4rem;
+}
+.hero-a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-a a{
+    margin: 1rem 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-a a i{
+    padding-right: 5px;
+}
+.btn{
+    padding: 1.2rem 2rem;
+    color: var(--main-hover);
+    border: 2px solid var(--main-hover);
+    transition: all .4s ease;
+}
+.btn:hover{
+    border: 2px solid var(--main);
+    background-color: var(--main);
+    color: #fff;
+    transform: translateX(10px);
+}
+.hero-img{
+    grid-area: hero-img;
+}
+.hero-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* AboutMe */
+#aboutme{
+    background-image: url(https://mobirise.com/website-templates/cv-website-template/assets/images/aboutme-1-2000x1333.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 8rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 1rem;
+}
+.aboutme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 500px;
+}
+.aboutme h1{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+.aboutme .underline::after{
+    width: 40%;
+    transform: translateX(45px);
+    background-color: #000;
+}
+.aboutme ul li{
+    font-size: 1.4rem;
+    margin: 1rem 0;
+}
+.aboutme p{
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+}
+.aboutme ul{
+   list-style: none;
+   margin-top: 2rem;
+}
+/* CV Text */
+#cvtext{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 9rem 0;
+    background-color: #cbe6ea;
+    margin: 0 1rem;
+    margin-bottom: 1rem;
+}
+#cvtext h1{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 500;
+}
+#cvtext .underline::after{
+    transform: translateX(110px);
+}
+@media screen and (max-width:1170px) {
 
+    #hero{
+        grid-template-columns: 1fr 1.5fr;
+    }
+}
+
+@media screen and (max-width:980px){
+    #hero{
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem 10rem;
+        grid-template-areas: 
+        "hero-img "
+         "hero-text";
+    }
+}
 @media screen and (max-width:940px) {
     nav ul {
         flex-direction: column;
@@ -138,7 +290,6 @@ nav ul li {
         align-items: center;
         justify-content: flex-start;
         background-color: #fff;
-        border: 1px solid #000;
         transition: all .5s ease;
         opacity: 0;
         z-index: 100;
@@ -161,4 +312,39 @@ nav ul li {
         display: inherit;
     }
     
+}
+@media screen and (max-width:670px){
+    #hero{
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem 5rem;
+    }
+    .aboutme{
+        width: auto;
+        margin: 0 1.5rem;
+    }
+}
+@media screen and (max-width:510px){
+    #hero{
+        padding: 2rem 2rem;
+        grid-template-rows: 60vh fit-content;
+        grid-template-columns: fit-content;
+    }
+    .hero-a{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .hero-text{
+        padding: 3rem 1rem;
+    }
+}
+@media screen and (max-width:310px){
+    #hero{
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+    .hero-text h1 {
+        font-size: 2rem;
+    }
 }

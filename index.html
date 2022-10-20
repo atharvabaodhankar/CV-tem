@@ -1,11 +1,16 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CV WEB</title>
+    <script src="https://kit.fontawesome.com/79f75f2740.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <!-- https://mobirise.com/website-templates/cv-website-template/ -->
 </head>
+
 <body>
     <nav>
         <div class="logo">
@@ -22,7 +27,7 @@
             <li><a href="#">AboutUs</a></li>
             <li><a href="#">ContactUs</a></li>
 
-            
+
         </ul>
         <div class="hamburger">
             <div class="hambar"></div>
@@ -32,11 +37,39 @@
     </nav>
     <section id="hero">
         <div class="hero-text">
-            <h1></h1>
+            <h1 class="underline">MARY D. DAVIS</h1>
+
+            <p>CV Website Template</p>
+
+            <div class="hero-a">
+                <a class="btn" href="#"><i class="fa-solid fa-download"></i>Download CV</a>
+                <a class="btn" href="#"><i class="fa-solid fa-phone-volume"></i>Contact Me</a>
+            </div>
         </div>
         <div class="hero-img">
-            <img src="https://mobirise.com/website-templates/cv-website-template/assets/images/header1-1706x1137.jpg" alt="">
+            <img src="https://mobirise.com/website-templates/cv-website-template/assets/images/header1-1706x1137.jpg"
+                alt="">
         </div>
+    </section>
+    <section id="aboutme">
+       <div class="aboutme">
+        <h1 class="underline">About Me</h1>
+        <p>I am Mary D. Davis, web designer from USA, California. I have rich experience in web site design and building
+            and customization, also I am good at wordpress and using CV Website Template. I love to talk with you about
+            our unique and Resume Designer Template.</p>
+
+        <ul>
+            <li>AGE . . . . . 27</li>
+            <li> RESIDENCE . . . . . USA</li>
+            <li> FREELANCE . . . . . Available</li>
+            <li> ADDRESS . . . . . California, USA</li>
+        </ul>
+       </div>
+    </section>
+    <section id="cvtext">
+        <h1 class="underline">
+            CV Website Template
+        </h1>
     </section>
     <script>
         let hamburger = document.querySelector('.hamburger');
@@ -44,13 +77,14 @@
         let closeBar = document.querySelector('.close-bar');
 
 
-        hamburger.addEventListener('click' , ()=>{
+        hamburger.addEventListener('click', () => {
             navBar.classList.toggle('active');
         })
-        closeBar.addEventListener('click' , ()=>{
+        closeBar.addEventListener('click', () => {
             navBar.classList.remove('active');
         })
     </script>
-    
+
 </body>
+
 </html>
