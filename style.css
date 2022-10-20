@@ -246,7 +246,7 @@ nav ul li {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 9rem 0;
+    padding: 6rem 0;
     background-color: #cbe6ea;
     margin: 0 1rem;
     margin-bottom: 1rem;
@@ -337,6 +337,13 @@ nav ul li {
     }
     .hero-text{
         padding: 3rem 1rem;
+    }
+    #cvtext h1 {
+        font-size: 2.3rem;
+        padding: 0 1rem;
+    }
+    #cvtext .underline::after{
+        transform: translateX(95px);
     }
 }
 @media screen and (max-width:310px){
