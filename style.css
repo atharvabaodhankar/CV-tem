@@ -259,6 +259,71 @@ nav ul li {
 #cvtext .underline::after{
     transform: translateX(110px);
 }
+/* Editex */
+#editex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.editex-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #cbe6ea;
+    padding: 4rem 1rem;
+    width: 50%;
+    margin: 0 .5rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+.editex-left ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.editex-left li, .editex-right li{
+    line-height: 2.5rem;
+}
+.editex-left b, .editex-right b{
+    font-weight: 600;
+}
+.editex-left i, .editex-right i{
+    font-size: 4rem;
+    padding: 2rem;}
+.editex-right ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.editex-left h1 , .editex-right h1{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+.editex-left ul, .editex-right ul{
+    font-size: 1.3rem;
+    margin: 1.5rem 0;
+    list-style: none;
+}
+.editex-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #cbe6ea;
+    padding: 4rem 1rem;
+    width: 50%;
+    margin: 0 .5rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
 @media screen and (max-width:1170px) {
 
     #hero{
@@ -310,6 +375,15 @@ nav ul li {
     }
     .hamburger{
         display: inherit;
+    }
+    #editex{
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+    .editex-left , .editex-right{
+        width: 100%;
+        padding: 4rem 2rem;
+        margin: 1rem 0;
     }
     
 }
