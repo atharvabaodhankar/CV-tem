@@ -324,6 +324,124 @@ nav ul li {
     margin-right: 1rem;
     margin-bottom: 1rem;
 }
+
+/* Pricing */
+#pricing{
+    background-color: #cbe6ea;
+    padding: 5rem 0;
+    margin: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.pricing-head-text{
+    margin: 3rem 0;
+}
+.pricing-head-text h1{
+    font-size: 4rem;
+    font-weight: 400;
+}
+.pricing-head-text .underline::after{
+    transform: translateX(45px);
+    background-color: rgb(39, 39, 39);
+    width: 40%;
+}
+.pricing{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.pricing-box{
+    width: 200px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 4.5rem;
+    height: 280px;
+    position: relative;
+}
+.pricing-box i{
+    font-size: 2.4rem;
+    padding: 1rem;
+}
+.pricing-box h1{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.pricing-box p{
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    line-height: 2.2rem;
+}
+.pricing-box a{
+    font-size: 1.6rem;
+    padding: 1rem 2.5rem 1rem 2rem;
+    position: absolute;
+    bottom: 10px;
+}
+.pricing-box a i{
+    padding: .5rem;
+    font-size: 1.7rem;
+}
+/* Services */
+#services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.services-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+    background-color: #cbe6ea;
+    width: 98.5%;
+    margin: 1.5rem 0rem;
+}
+.services-head h1{
+    font-size: 4rem;
+    font-weight: 400;
+}
+.services-head .underline::after{
+    transform: translateX(85px);
+}
+.services{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-basis: 25%;
+}
+.services-box{
+    background-color: #cbe6ea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.5rem;
+    text-align: center;
+    margin: 0 .6rem;
+    height: 320px;
+    margin-bottom: 1rem;
+}
+.services-box i{
+    font-size: 3rem;
+    margin: 1rem;
+}
+.services-box h1{
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin: 1rem;
+}
+.services-box p{
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+}
 @media screen and (max-width:1170px) {
 
     #hero{
@@ -385,7 +503,57 @@ nav ul li {
         padding: 4rem 2rem;
         margin: 1rem 0;
     }
+    .pricing-box{
+        margin: 0 2rem;
+    }
+    .services {
+        flex-basis: auto;
+        flex-wrap: wrap;
+    }
+    .services-box{
+        width: 48%;
+        margin-bottom: 1.4rem;
+    }
     
+}
+@media screen and (max-width:760px){
+    .pricing{
+        flex-direction: column;
+        align-items: center;
+    }
+    #pricing{
+        background-color: #fff;
+        padding: 1rem 0;
+        margin: 0;
+    }
+    .pricing{
+        width: 100%;
+        margin-top: 0rem;
+    }
+    .pricing-head-text{
+        width: 95%;
+        background-color: #cbe6ea;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        margin: 0;
+    }
+    .pricing-box{
+        background-color: #cbe6ea;
+        margin: 0;
+
+        margin-top: 1.5rem;
+        width: 95%;
+        padding: 4rem 0;
+        height: auto;
+        position: static;
+    }
+    .pricing-box a{
+        position: static;
+        margin-top: 2rem;
+    }
+
 }
 @media screen and (max-width:670px){
     #hero{
@@ -397,6 +565,13 @@ nav ul li {
     .aboutme{
         width: auto;
         margin: 0 1.5rem;
+    }
+    .services-head {
+        width: 95%;
+        text-align: center;
+    }
+    .services-box {
+        width: 95%;
     }
 }
 @media screen and (max-width:510px){
